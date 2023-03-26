@@ -1,4 +1,14 @@
-# jest-tests-demo
-Tutorial on how to write tests for expressjs and mongoose application
+# npm init
+# npm i express mongoose axios dotenv
+# npm i jest supertest cross-env
+jest: Jest is a framework for testing JavaScript code. Unit testing is the main usage of it.
+supertest: Using Supertest, we can test endpoints and routes on HTTP servers.
+cross-env: You can set environmental variables inline within a command using cross-env.
 
-![how to write tests](https://user-images.githubusercontent.com/70439799/193745664-bd9c4693-e1c8-46f8-8867-98130544d0ef.png)
+"scripts": {
+    "test": "cross-env NODE_ENV=test jest --testTimeout=5000",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+},
+
+
